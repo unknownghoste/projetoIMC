@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="imagens/icon.png" />
+</head>
+<body>
+    <div class="app">
+        <h1>Calculadora de IMC</h1>
+        <div class="input-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Nome">
+        </div>
+        <div class="input-group">
+            <label for="age">Idade:</label>
+            <input type="number" id="age" placeholder="Idade">
+        </div>
+        <div class="input-group">
+            <label for="gender">Sexo:</label>
+            <select id="gender">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="height">Altura (em cm):</label>
+            <input type="number" id="height" placeholder="Altura (cm)">
+        </div>
+        <div class="input-group">
+            <label for="weight">Peso (em kg):</label>
+            <input type="number" id="weight" placeholder="Peso (kg)">
+        </div>
+        <button id="calculate">Calcular IMC</button>
+        <button id="clear">Limpar Campos</button>
+        <div class="result">
+            <h2>Resultado:</h2>
+            <p id="imcResult"></p>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>
